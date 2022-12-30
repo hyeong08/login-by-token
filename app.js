@@ -3,12 +3,20 @@ const express = require('express')
 const app = express()
 const port = 3000
 
-app.get('/test', (req,res) => {
-    res.send('테스트 페이지 입니다')
+app.get('/users', (req,res) => {
+    res.send('유저 정보')
 })
 
-app.post('/post-test', (req,res) => {
-    res.send('post 테이스 페이지 입니다')
+app.post('/login', (req,res) => {
+    res.send('로그인')
+})
+
+app.post('/logout', (req,res) => {
+    res.send('로그아웃')
+})
+
+app.post('/register', (req,res) => {
+    res.send('등록')
 })
 
 
